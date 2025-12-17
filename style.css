@@ -26,39 +26,46 @@ body{
   color: #ffffff;
 }
 
+.title-griduwu h1,
+.title-griduwu h3 {
+  margin: 0;
+}
+
 /* HERO SECTION */
 .hero-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
   background-image: url("./resources/Hero-background.jpg");
 }
 
-.btn-inicio {
-  background-color: #e50914; 
-  color: white;
+#btn-inicio {
+  background-color: #ffffff ; 
+  color: black;
   border: none;
 }
 
-.btn-regis {
-  background-color: #ffffff;
-  color: #000000;
+#btn-regis {
+  background-color: #e50914 !important;
+  color: white !important;
     border: none;
 }
 
-
-.texto-vermas{
-    color: #e50914;
-    text-align: right;
-    padding-right: 50px;
+#titulo{
+    color: #DCF836
 }
+
+
+
 
 /*grids*/
 /* GRID GENERAL */
-.parent {
+.parenta {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 8px;
   background-color: var(--color-de-fondo);
-
+    padding-bottom: 100px;
 }
 
 /* POSICIONES */
@@ -108,6 +115,14 @@ body{
 .title-griduwu{
   color:var(--color-de-titulos);
   background-color:black;
+  margin: 0;
+}
+.texto-vermas{
+    font-size: 20px;
+    color: #e50914;
+    text-align: right;
+    padding-right: 20%;
+    padding-bottom: 30px;
 }
 
 /* DESCRIPCIÓN */
@@ -121,6 +136,8 @@ body{
   color:var(--color-de-titulos);
 }
 .Titulo-principal{
+    padding-left: 20%;
+    padding-top: 20px;
   color:var(--color-de-titulos);
 }
 
