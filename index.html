@@ -3,16 +3,49 @@
  Hector Magdaleno
  Alexis Castillo
  Hibeth Torres -->
+ <!-- https://github.com/Estorealsuwu/CH62-Movies -->
 <!DOCTYPE html>
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
-    <title>CH62 Movies</title>
+    <link href="./style.css" rel="stylesheet"> <!-- CSS debe ir antes de la ref de Bootstrap, para no sobre escribir nuestras propias reglas de diseño -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>CH62 Movies</title> 
 </head>
 <body> 
-    <header>
+
+
+<!-- Navbar con Bootstrap -->
+<nav class="navbar navbar-expand-lg py-4 custom-navbar">
+  <div class="container"> <!-- Container: tiene widths minimos y maximos; container-fluid: width al 100% -->
+    <!-- Imagen Logo -->
+    <a class="navbar-brand" href="#">
+        <img src="./resources/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto"><!-- Margin Start-Auto: Para que el texto aparezca a la derecha -->
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Newsletter</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Fin del Navbar con Bootstrap -->
+<!-- Hero Section -->
+ <section class="hero-section">
+    <div class="hero-content">
+    </div>
+
+
+    <!-- <header>
         <img class="headerLogo" src="./resources/logo.png" alt="Logo de la pagina">
         <nav>
             <ul class="nav_links">
@@ -27,15 +60,62 @@
         
     </div>
     <div class="title-grid">
-        <h1>Volver al futuro</h1>
+        <h1>Volver al futuro: Saga</h1>
     </div>
+    
 
-<div class="parent">
-    <div class="div1">1</div>
-    <div class="div2">2</div>
-    <div class="div3">3</div>
+    <p>Hola mundo</p>
+ -->
+    <!-- Grids -->
+     
+ <div class="parent">
+
+  <!-- CARD 1 -->
+  <div class="card div1">
+    <img src="./resources/card1.png" alt="Card 1">
+    <h3>Volver al futuro: Saga</h3>
+    <p>
+      Sinopsis
+    </p>
+    <div class="btn-section">
+      <p>Saga</p>
+      <p>Volver al futuro</p>
+      <p>+4</p>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card div2">
+    <img src="./resources/card2.png" alt="Card 2">
+    <h3>Volver al futuro 1</h3>
+    <p>
+      Sinopsis
+    </p>
+     <div class="btn-section">
+      <p>Saga</p>
+      <p>Volver al futuro</p>
+      <p>+4</p>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card div3">
+    <img src="./resources/card3.png" alt="Card 3">
+    <h3>Volver al futuro 2</h3>
+    <p>
+      Sinopsis
+    </p>
+     <div class="btn-section">
+      <p>Saga</p>
+      <p>Volver al futuro</p>
+      <p>+4</p>
+    </div>
+  </div>
+
 </div>
-</main>
 
+
+
+</main>
 </body>
 </html>

@@ -1,32 +1,93 @@
-
-
-
-
-/*girds*/
-
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 8px;
+:root{
+    --color-de-acento: rgb(187, 255, 0);
+    --color-de-fondo: #000000;
+    --color-de-texto: #ffffff;
+    --color-de-titulos: rgb(187, 255, 0);
 }
-    
+
+body{
+    background-color: var(--color-de-fondo);
+    font-family: 'Inter', sans-serif;
+    color: var(--color-de-texto);
+   
+}
+/*default*/
+
+
+/* header */
+.custom-navbar {
+  background-color: #090D1F;
+}
+
+.custom-navbar .nav-link {
+  color: #ffffff;
+}
+
+
+
+/*grids*/
+
+/* GRID GENERAL */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+}
+
+/* POSICIONES (las tuyas, intactas) */
 .div1 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
 }
 
 .div2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
 }
 
 .div3 {
-    grid-column: span 3 / span 3;
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 3;
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 3;
 }
+
+/* ESTILO DE CADA CARTA */
+.card {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 12px;
+}
+
+/* IMAGEN */
+.card img {
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* TITULO */
+.card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* DESCRIPCIÓN */
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #555;
+}
+.btn-item{
+   display:flex;
+}
+
         
