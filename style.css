@@ -4,11 +4,14 @@
     --color-de-texto: #ffffff;
     --color-de-titulos: rgb(187, 255, 0);
 }
+    
 
 body{
     background-color: var(--color-de-fondo);
     font-family: 'Inter', sans-serif;
     color: var(--color-de-texto);
+    /*background-color: var(--color-de-fondo);*/
+    
    
 }
 /*default*/
@@ -23,19 +26,42 @@ body{
   color: #ffffff;
 }
 
+/* HERO SECTION */
+.hero-section {
+  background-image: url("./resources/Hero-background.jpg");
+}
 
+.btn-inicio {
+  background-color: #e50914; 
+  color: white;
+  border: none;
+}
+
+.btn-regis {
+  background-color: #ffffff;
+  color: #000000;
+    border: none;
+}
+
+
+.texto-vermas{
+    color: #e50914;
+    text-align: right;
+    padding-right: 50px;
+}
 
 /*grids*/
-
 /* GRID GENERAL */
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 8px;
+  background-color: var(--color-de-fondo);
+
 }
 
-/* POSICIONES (las tuyas, intactas) */
+/* POSICIONES */
 .div1 {
   grid-row: span 2 / span 2;
   grid-column-start: 2;
@@ -55,39 +81,46 @@ body{
 }
 
 /* ESTILO DE CADA CARTA */
-.card {
-  background-color: #ffffff;
-  padding: 16px;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-
+.carduwu {
+  background-color: var(--color-de-fondo);    
+  padding: 0;             
   display: grid;
   grid-template-rows: auto auto 1fr;
   gap: 12px;
 }
 
 /* IMAGEN */
-.card img {
+.carduwu img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 16px;
+  display: block;
 }
 
-/* TITULO */
-.card h3 {
+/* TÍTULO */
+.carduwu h3 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
+  color: var(--color-de-titulos);
+}
+.title-griduwu{
+  color:var(--color-de-titulos);
+  background-color:black;
 }
 
 /* DESCRIPCIÓN */
-.card p {
+.carduwu p {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.4;
-  color: #555;
+  color: var(--color-de-texto);
 }
-.btn-item{
-   display:flex;
+.titulo{
+  color:var(--color-de-titulos);
+}
+.Titulo-principal{
+  color:var(--color-de-titulos);
 }
 
-        
